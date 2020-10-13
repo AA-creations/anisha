@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="design.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<title>Jewellery</title>
+</head>
+<body>
+	<div class="cover">
+    <img src="logo.png" class="logo">
+    <h1>Welcome to the world of jewellery!</h1>
+    
+    </div>
+    <div>
+    	 <img class="cover" src="cover1.jpg" style="width:100%">
+         <img class="cover" src="cover2.png" style="width:100%">
+         <img class="cover" src="cover3.jpg" style="width:100%">
+         <img class="cover" src="cover4.jpg" style="width:100%">
+         <img class="cover" src="cover5.jpg" style="width:100%">
+    </div>
+    <ul>
+  <li><a href="#home">Home</a></li>
+  <li><a href="#jewellery">Jewellery</a></li>
+  <li><a href="#prices">Prices</a></li>
+
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Categories</a>
+    <div class="dropdown-content">
+      <a href="category n.html">Necklace</a>
+      <a href="category b.html">Bracelet</a>
+      <a href="category e.html">Earrings</a>
+    </div>
+  </li>
+  <li><a href="login.html">Collections</a></li>
+  <li><a href="login.html">Log in</a></li>
+  <li><a href="login.html">Sign up</a></li>
+  <li><a href="login.html">Search</a></li>
+</ul>
+<h2>Exclusively for you!</h2>
+<div>
+	<div>
+	<img src="m2.jpg" width="29.5%" height="500px">
+	<img src="m1.jpg" width="40%" height="500px">
+	<img src="m3.jpeg" width="29.5%" height="500px">
+	<button class="a">SHOP NOW</button>
+	<button class="b">SHOP NOW</button>
+	<button class="c">SHOP NOW</button>
+</div>
+<h3 class="gen">Shop By Gender!</h3>
+<div>
+	<img src="kids.jpg" width="24.5%" height="300px">
+	<img src="men.jpg" width="24.5%" height="300px">
+	<img src="women.jpg" width="24.5%" height="300px">
+	<img src="pair.jpg" width="24.5%" height="300px">
+	<button class="d">KIDS</button>
+	<button class="e">MEN</button>
+	<button class="f">WOMEN</button>
+	<button class="g">COUPLES</button>
+</div>
+<div class="book">
+	<h4>BOOK AN APPOINTMENT</h4>
+	<p>Book an appointment at your nearest AA Creations <br>store and we will provide you with <br> personalised shopping <br> experience!</p>
+	<button class="km">Know More</button>
+</div>
+<div class="bs">
+	<h5><em>Customer Reviews!</em></h5>
+	<img src="pendant.jpg" class="pen">
+	<ol>
+		<li>Excellent</li><br>
+			<p><em>Thank you so much AA Creations. <br>It’s a really great experience. <br>We are loving your product. <br></em>~Mr.Rajesh Khanna</p>
+		<img src="ring.jpg" class="ring">
+		<li>Loved them</li><br>
+			<p><em>Beautiful pair of studs! <br> Loved them. <br>Very good for daily office wear. <br></em>~Ms.Shruti Rai</p>
+		<img src="gold coin.jpg" class="coin">
+		<li>Beautiful</li><br>
+		    <p><em>Beautifully crafted sleek & simple design. <br> Graceful <br>With in budget. <br></em>~Mrs.Pooja Arora</p>
+		<img src="earring.jpg" class="earring">
+		<li>Worth it</li><br>
+		    <p><em>Liked the product and services very much. <br> My first choice for jewellery is <br>AA Creations. <br></em>~Mrs.Pooja Arora</p>
+    </ol>
+</div>
+<div class="f1">
+	<div class="f11">
+		<p>100% ORIGINAL <br>All products are original and go through <br> strict quality check.</p>
+	</div>
+	<div class="f12">
+		<p>8% MAKING CHARGES <br>You get a wide range of gold jewellery <br> choices starting at 8% only.</p>
+	</div>
+	
+</div>
+<div class="f2">
+	<h6>Find a store near you!</h6>
+	<p>We are currently open with 100+ stores in India and we plan to open more number of stores for you. Find your nearest store for a great shopping experience.</p>
+	<input type="text" name="text" placeholder="CITY">
+	<button>Submit</button>
+	<h6>Customer Service</h6>
+	<p>HELP AND CONTACT <br> DELIVERY INFORMATION <br>RETURNS <br> PAYMENT OPTIONS <br> TRACK ORDER <br> OFFERS <br> CONTACT DETAILS <br> TERMS AND CONDITIONS <br> PRIVACY POLICY <br></p>
+	<h6>Follow us on</h6>
+    <a href="#" class="fa fa-facebook"></a>
+    <a href="#" class="fa fa-twitter"></a>
+    <a href="#" class="fa fa-instagram"></a>
+</div>
+</body>
+<script>
+var a = 0;
+slide();
+
+function slide() {
+  var i;
+  var x = document.getElementsByClassName("cover");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  a++;
+  if (a > x.length) {a = 1}    
+  x[a-1].style.display = "block";  
+  setTimeout(slide, 3000); 
+}
+</script>
+</html>
