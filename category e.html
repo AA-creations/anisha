@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latest Earrings Designs</title>
+    <link href="style.css" type="text/css" rel="stylesheet">
+</head>
+
+<body>
+     <div class="cover">
+    <img src="logo.png" class="logo">
+    <h1>Welcome to the world of jewellery!</h1>
+    
+    </div>
+    <div>
+         <img class="cover" src="cover1.jpg" style="width:100%">
+         <img class="cover" src="cover2.png" style="width:100%">
+         <img class="cover" src="cover3.jpg" style="width:100%">
+         <img class="cover" src="cover4.jpg" style="width:100%">
+         <img class="cover" src="cover5.jpg" style="width:100%">
+    </div>
+    <div class="main">
+        <h3 class="sub">Earrings</h3>
+        <p class="pstyle">From bedazzling South Indian jewellery designs, to modern, graceful and delicate, our gold and
+            diamond earrings are eye-catching. Part of our collection is embellished with jewels for those with a
+            flamboyant taste, while others with a simpler disposition can relish our more modest designs.
+        </p>
+    </div>
+    <div class="main1">
+        <img src="./img1/earring 1 s.jpg" class="img">
+
+        <h4 class="sub1">Oxidised Brass Metal Jhumki Earrings</h4>
+        <p class="prg">M.R.P.: <span class="cut">₹ 799.00</span><br>
+            Price:<span class="highlight">₹ 199.00</span><br>
+            <button class="b1" onclick="visitPage();">Buy Now</button>
+        </p>
+    </div>
+
+    <div class="main1">
+        <img src="./img1/earring 4 s.jpg" class="img">
+
+        <h4 class="sub1">Copper Italian Designer Collection Drop Earrings</h4>
+        <p class="prg">M.R.P.: <span class="cut">₹ 1999.00</span><br>
+            Price:<span class="highlight">₹ 211.00
+            </span><br>
+            <button class="b1" onclick="visitPage();">Buy Now</button>
+        </p>
+    </div>
+
+    <div class="main1">
+        <img src="./img1/earring 2 s.jpg" class="img">
+
+        <h4 class="sub1">Gold Plated Fancy Party Wear Earrings</h4>
+        <p class="prg">M.R.P.: <span class="cut">₹ 1,999.00</span><br>
+            Price:<span class="highlight">₹ 199.00
+            </span><br>
+            <button class="b1" onclick="visitPage();">Buy Now</button>
+        </p>
+    </div>
+
+    <div class="main1">
+        <img src="./img1/earring 3 s.jpg" class="img">
+
+        <h4 class="sub1">Stylish Fancy Party Wear Gold Plated Earrings </h4>
+        <p class="prg">M.R.P.: <span class="cut">₹ 1,999.00</span><br>
+            Price:<span class="highlight">₹ 208.00
+            </span><br>
+            <button class="b1" onclick="visitPage();">Buy Now</button>
+        </p>
+    </div>
+    <div class="main2">
+        <p class="sub2">
+            <button id="b2">1</button>
+            <button class="b3">2</button>
+            <button class="b3">3</button>
+            <button class="b3">4</button>
+            <button class="b3">5</button>
+        </p>
+    </div>
+    <div class="f2">
+    <h6>Find a store near you!</h6>
+    <p>We are currently open with 100+ stores in India and we plan to open more number of stores for you. Find your nearest store for a great shopping experience.</p>
+    <input type="text" name="text" placeholder="CITY">
+    <button>Submit</button>
+    <h6>Customer Service</h6>
+    <p>HELP AND CONTACT <br> DELIVERY INFORMATION <br>RETURNS <br> PAYMENT OPTIONS <br> TRACK ORDER <br> OFFERS <br> CONTACT DETAILS <br> TERMS AND CONDITIONS <br> PRIVACY POLICY <br></p>
+    <h6>Follow us on</h6>
+    <a href="#" class="fa fa-facebook"></a>
+    <a href="#" class="fa fa-twitter"></a>
+    <a href="#" class="fa fa-instagram"></a>
+</div>
+</body>
+<script>
+        var a = 0;
+slide();
+
+function slide() {
+  var i;
+  var x = document.getElementsByClassName("cover");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  a++;
+  if (a > x.length) {a = 1}    
+  x[a-1].style.display = "block";  
+  setTimeout(slide, 3000); 
+}
+        function visitPage(){
+            window.location="login.html";
+        }
+    </script>
+</html>

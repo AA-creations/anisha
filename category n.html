@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latest Necklace Designs</title>
+    <link href="style.css" type="text/css" rel="stylesheet">
+</head>
+
+<body>
+     <div class="cover">
+    <img src="logo.png" class="logo">
+    <h1>Welcome to the world of jewellery!</h1>
+    
+    </div>
+    <div>
+         <img class="cover" src="cover1.jpg" style="width:100%">
+         <img class="cover" src="cover2.png" style="width:100%">
+         <img class="cover" src="cover3.jpg" style="width:100%">
+         <img class="cover" src="cover4.jpg" style="width:100%">
+         <img class="cover" src="cover5.jpg" style="width:100%">
+    </div>
+     <div class="main">
+        <h3 class="sub">Necklace</h3>
+        <p class="pstyle">Grace and elegance personified, our striking necklaces are created for the wearer to stand
+            out. Our statement
+            heritage Indian necklace designs reflect bold yet feminine sentiments. We also offer an extensive selection
+            of
+            lightweight gold necklace designs with a contemporary touch. Every piece tells a story.
+        </p>
+    </div>
+    <div class="main1">
+        <img src="./img1/necklace29 s.jpg" class="img">
+
+        <h4 class="sub1">Gorgeous Pearl Gold Plated Wedding Jewellery Kundan Peacock Meenakari Multi-String
+            Necklace </h4>
+        <p class="prg">M.R.P.: <span class="cut">₹ 3,745.00</span><br>
+            Price:<span class="highlight">₹ 549.00</span><br>
+            <button class="b1" onclick="visitPage();">Buy Now</button>
+        </p>
+    </div>
+
+    <div class="main1">
+        <img src="./img1/necklace30  s.jpg" class="img">
+
+        <h4 class="sub1">Offwhite Gold-Plated Western Wear Choker Statement Necklace</h4>
+        <p class="prg">M.R.P.: <span class="cut">₹ 999.00</span><br>
+            Price:<span class="highlight">₹ 428.00
+            </span><br>
+            <button class="b1" onclick="visitPage();">Buy Now</button>
+        </p>
+    </div>
+
+    <div class="main1">
+        <img src="./img1/necklace31 s.jpg" class="img">
+
+        <h4 class="sub1">Delightful Gold Plated Wedding Jewellery Kundan Choker Necklace</h4>
+        <p class="prg">M.R.P.: <span class="cut">₹ 2,095.00</span><br>
+            Price:<span class="highlight">₹ 349.00
+            </span><br>
+            <button class="b1" onclick="visitPage();">Buy Now</button>
+        </p>
+    </div>
+
+    <div class="main1">
+        <img src="./img1/necklace32 s.jpg" class="img">
+
+        <h4 class="sub1">Traditional Red and Green Temple Coin Ginni Necklace Set</h4>
+        <p class="prg">M.R.P.: <span class="cut">₹ 2,999.00</span><br>
+            Price:<span class="highlight">₹ 308.00 
+            </span><br>
+            <button class="b1" onclick="visitPage();">Buy Now</button>
+        </p>
+    </div>
+    <div class="main2">
+        <p class="sub2">
+            <button id="b2">1</button>
+            <button class="b3">2</button>
+            <button class="b3">3</button>
+            <button class="b3">4</button>
+            <button class="b3">5</button>
+        </p>
+    </div>
+<div class="f2">
+    <h6>Find a store near you!</h6>
+    <p>We are currently open with 100+ stores in India and we plan to open more number of stores for you. Find your nearest store for a great shopping experience.</p>
+    <input type="text" name="text" placeholder="CITY">
+    <button>Submit</button>
+    <h6>Customer Service</h6>
+    <p>HELP AND CONTACT <br> DELIVERY INFORMATION <br>RETURNS <br> PAYMENT OPTIONS <br> TRACK ORDER <br> OFFERS <br> CONTACT DETAILS <br> TERMS AND CONDITIONS <br> PRIVACY POLICY <br></p>
+    <h6>Follow us on</h6>
+    <a href="#" class="fa fa-facebook"></a>
+    <a href="#" class="fa fa-twitter"></a>
+    <a href="#" class="fa fa-instagram"></a>
+</div>
+
+
+
+</body>
+<script>
+    var a = 0;
+slide();
+
+function slide() {
+  var i;
+  var x = document.getElementsByClassName("cover");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  a++;
+  if (a > x.length) {a = 1}    
+  x[a-1].style.display = "block";  
+  setTimeout(slide, 3000); 
+}
+        function visitPage(){
+            window.location="login.html";
+        }
+    </script>
+</html>
