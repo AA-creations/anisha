@@ -82,6 +82,7 @@ h2{
 	border-radius: 20px;
 	background: transparent;
 	color: yellow;
+	cursor: pointer;
 }
 .b{
 	position: relative;
@@ -90,6 +91,7 @@ h2{
 	border-radius: 20px;
 	background: transparent;
 	color: yellow;
+	cursor: pointer;
 }
 .c{
     position: relative;
@@ -98,6 +100,7 @@ h2{
 	border-radius: 20px;
 	background: transparent;
 	color: yellow;
+	cursor: pointer;
 }
 .gen{
 	font-size: 50px;
@@ -112,6 +115,7 @@ h2{
 	background: transparent;
 	color: yellow;
 	border-radius: 20px;
+	cursor: pointer;
 }
 .e{
 	position: relative;
@@ -120,6 +124,7 @@ h2{
 	background: transparent;
 	color: yellow;
 	border-radius: 20px;
+	cursor: pointer;
 }
 .f{
 	position: relative;
@@ -128,6 +133,7 @@ h2{
 	background: transparent;
 	color: yellow;
 	border-radius: 20px;
+	cursor: pointer;
 }
 .g{
 	position: relative;
@@ -136,6 +142,35 @@ h2{
 	background: transparent;
 	color: yellow;
 	border-radius: 20px;
+	cursor: pointer;
+}
+.a:hover{
+	background-color: white;
+	color: black;
+}
+.b:hover{
+	background-color: white;
+	color: black;
+}
+.c:hover{
+	background-color: white;
+	color: black;
+}
+.d:hover{
+	background-color: white;
+	color: black;
+}
+.e:hover{
+	background-color: white;
+	color: black;
+}
+.f:hover{
+	background-color: white;
+	color: black;
+}
+.g:hover{
+	background-color: white;
+	color: black;
 }
 .book{
 	background: url(book.jpg);
@@ -158,6 +193,11 @@ p{
 	border-radius: 20px;
 	border: 2px solid black;
 	font-size: 25px;
+	cursor: pointer;
+}
+.km:hover{
+	color: black;
+	background-color: white;
 }
 .bs{
 	background: url(golden.jpg);
